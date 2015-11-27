@@ -5,9 +5,9 @@ set :rvm_type, :user
 set :rvm_ruby_version, '2.2.3'
 
 set :application, 'SuperStoreCHARTS'
-set :deploy_to, "/home/ubuntu/wwww/#{fetch(:application)}"
+set :deploy_to, "/home/ubuntu/www/#{fetch(:application)}"
 set :scm, :git
-set :repo_url, 'https://github.com/Maiclear/AprendiendoCapi.git'
+set :repo_url, 'git@github.com:Maiclear/AprendiendoCapi.git'
 set :branch, 'master'
 
 set :linked_files, %w{config/database.yml config/secrets.yml .env}

@@ -16,11 +16,11 @@ require 'capistrano/deploy'
 #   https://github.com/capistrano/passenger
 #
 
-  require 'capistrano-bundler'
-  require 'capistrano-rails'
-  require 'capistrano-rvm'
-  require 'capistrano-passenger'
-  require 'capistrano-ssh-doctor'
+  require 'capistrano/bundler'
+  require 'capistrano/rails'
+  require 'capistrano/rvm'
+  require 'capistrano/passenger'
+  require 'capistrano/ssh_doctor'
 
 # Load custom tasks from `lib/capistrano/tasks` if you have any defined
 Dir.glob('lib/capistrano/tasks/*.rake').each { |r| import r }
